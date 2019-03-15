@@ -8,6 +8,7 @@ public class monster : MonoBehaviour
 {
     // public Button redBtn;
 
+   public  bool canWalk = true;
     public float moveSpeed;
 
     // [SerializeField] private string loadLevel;
@@ -20,7 +21,11 @@ public class monster : MonoBehaviour
 
     void Update()
     {
+        if(canWalk == true){
         transform.Translate(-moveSpeed*Time.deltaTime,0f,0f);
+        }else{
+
+        }
     }
 
     // void ButtonClicked(int redBtn)

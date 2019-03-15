@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class inventory : MonoBehaviour
 {
-    // public void PlayGame ()
-    // {
-    // 	SceneManager.LoadScene(1);
-    // }
-    // public void MainMenu ()
-    // {
-    // 	SceneManager.LoadScene(0);
-    // }
+	GameObject monster;
+
+    public void RedBtn ()
+    {
+    	monster = GameObject.Find("monster");
+		//	print(GameObject.Find("monster").GetComponent<monster>().canWalk);
+    	print(monster.GetComponent<monster>().canWalk);
+    }
 }
